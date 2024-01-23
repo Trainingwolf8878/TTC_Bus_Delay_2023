@@ -1,0 +1,21 @@
+---
+title: "Paper"
+format: pdf
+editor: visual
+---
+
+##TTC Bus Delay Analyze
+
+This is a research about the TTC bus delay analyze. To analyze the bus delay time connect to the date, we can find out whats happening in that date. For example, If in the same day, there are many bus delay than before, we can use the data to find out what is happening on the road. The outlier could be the driver become tired, or the driver is late for work.
+
+##Connection between the delay time and the date
+
+```{r}
+knitr::include_graphics("/cloud/project/output/data/date_delay.png")
+```
+
+In the graph, we use the data on the open data toronto. We clean the data with date and delay time. For this two variable is more esay for us to analyze the connection between the delay time and the date. At the first of the project, our purpose is to find out if something happened the delay time of the same date will be more than other time. In the graph, we can find out that the total delay is between the 2000-4000. In every date is the same, then we can say most date is normal as before. A few days the delay time is around the 4000-6000 and have a outlier in the 6000-8000. For the outlier, we can try to connect to the driver to find out whats happening in that date. It might be the traffic accident or something else of that bus. Because in that date many bus is in the average delay time.
+
+##Conclusion
+
+In the graph analyze, we can say it is very safe to drive in the Toronto. Depends on the delay time, we can find a average delay time is between the 4000-6000. Which can shows that this is a normal delay time. There is about 90% bus can stay in the average, which can shows there are not that much traffic accident happened in these date. Base on the graph, we can make a concluison that is the Toronto drive is safety.

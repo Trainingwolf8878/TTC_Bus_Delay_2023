@@ -1,0 +1,21 @@
+# Download
+install.packages("dplyr")
+install.packages("ggplot2")
+
+# Loading
+library(dplyr)
+library(ggplot2)
+
+# Find File
+file_path <- "/cloud/project/output/clean_data_2023.csv"
+
+# Import data
+clean_2023 <- read_csv(file_path)
+
+# Create a scatter plot
+ggplot(clean_2023, aes(x = Date, y = total_delay)) +
+  geom_point() +
+  labs(title = "Scatter Plot of Total Delay over Time",
+       x = "Date",
+       y = "Total Delay") +
+  theme_minimal()

@@ -1,0 +1,16 @@
+###Paper template###
+Name: Lin Dai
+Data:2024/1/23
+Title: Toronto Bus delay
+
+#Show the data graph
+
+In this section, Show out the graph that made from the clean_2023.csv
+
+#Analyze the data graph
+
+Give some comment about the data graph and compare each other
+
+#Make a conclusion
+
+In the last section, I will make a conclusion about the data graph and analyze.

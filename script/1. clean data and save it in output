@@ -1,0 +1,17 @@
+# set up
+library(dplyr)
+library(tidyverse)
+
+# Clean up
+raw_data_2023 <- read_csv("/cloud/project/input/data/ttc_delay_2023.csv")
+
+# Convert Date column to Date type
+raw_data_2023 <- raw_data_2023 %>%
+  mutate(Day = as.Day(Day, format = "%Y-%m-%d"))
+
+clean_2023 <- raw_data_2023 %>% 
+  drop_na() %>% 
+  group_by(Date) %>%
+  summarize(incidents = n(), total_delay = sum(`Min Delay`))
+
+
